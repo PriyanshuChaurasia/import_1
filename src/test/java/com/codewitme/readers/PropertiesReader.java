@@ -14,7 +14,7 @@ public class PropertiesReader {
 	   
 	   private PropertiesReader()
 	   {
-	      InputStream in = this.getClass().getClassLoader().getResourceAsStream(System.getProperty("env"));
+	      InputStream in = this.getClass().getClassLoader().getResourceAsStream(System.getProperty("env"));//comment
 	      System.out.println("Read all properties from file");
 	      try {
 	          configProp.load(in);
